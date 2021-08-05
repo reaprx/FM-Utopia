@@ -4,8 +4,9 @@ const sources = [
 ];
 
 const labels = [
-  [  ],
-  [  ],
+  [ "Now Streaming on Sinhala", "https://fm.reaprx.tk" ],
+  [ "Now Streaming on English", "https://fm.reaprx.tk" ],
+  
 ];
 
 let playingIndex = 0; // current radio
