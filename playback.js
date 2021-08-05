@@ -4,8 +4,8 @@ const sources = [
 ];
 
 const labels = [
-  [ "ReaprX Online Radio Station", "https://www.fm.reaprx.tk" ],
-  [ "ReaprX Online Radio Station", "https://www.fm.reaprx.tk"],
+  [  ],
+  [  ],
 ];
 
 let playingIndex = 0; // current radio
