@@ -4,8 +4,8 @@ const sources = [
 ];
 
 const labels = [
-  [ "Now Streaming on Sinhala", "https://fm.reaprx.tk" ],
-  [ "Now Streaming on English", "https://fm.reaprx.tk" ],
+  [ "Now Playing - Sinhala Station", "https://fm.reaprx.tk" ],
+  [ "Now Playing - English Station", "https://fm.reaprx.tk" ],
   
 ];
 
