@@ -1,11 +1,11 @@
 const sources = [
-  "http://stream.zeno.fm/ffzk298hx38uv", // sinhala
-  "http://stream.zeno.fm/fgrwvmd8u18uv", // english
+  " ", // sinhala
+  " ", // english
 ];
 
 const labels = [
-  [ "Now Playing - Sinhala Station", "https://fm.reaprx.tk" ],
-  [ "Now Playing - English Station", "https://fm.reaprx.tk" ],
+  [ "Now Listening to Sinhala Station", "https://fm.reaprx.tk/" ],
+  [ "Now Listening to English Station", "https://fm.reaprx.tk/" ],
   
 ];
 
