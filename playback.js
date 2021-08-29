@@ -1,6 +1,6 @@
 const sources = [
-  " ", // sinhala
-  " ", // english
+  "http://stream.zeno.fm/ffzk298hx38uv", // sinhala
+  "http://stream.zeno.fm/fgrwvmd8u18uv", // english
 ];
 
 const labels = [
