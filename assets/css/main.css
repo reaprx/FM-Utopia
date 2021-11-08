@@ -84,7 +84,7 @@
 		-webkit-transition: border-color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		
 		color: inherit;
 		outline: 0;
 		text-decoration: none;
@@ -163,7 +163,7 @@
 		animation: wrapper 1s forwards;
 		height: 100%;
 		left: 0;
-		opacity: 0;
+		opacity: 1;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -226,23 +226,6 @@
 		}
 	}
 
-	#overlay {
-		-moz-animation: overlay 0.25s 0.25s forwards;
-		-webkit-animation: overlay 0.25s 0.25s forwards;
-		-ms-animation: overlay 0.25s 0.25s forwards;
-		animation: overlay 0.25s 0.25s forwards;
-		background-attachment: fixed, fixed;
-		background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
-		background-position: top left, center center;
-		background-repeat: repeat, no-repeat;
-		background-size: auto, cover;
-		height: 100%;
-		left: 0;
-		opacity: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
 
 /* Main */
 
@@ -443,7 +426,7 @@
 		#header p {
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
-			opacity: 0.75;
+			opacity: 1;
 		}
 
 		#header nav {

@@ -3,11 +3,10 @@ const sources = [
   "http://stream.zeno.fm/fgrwvmd8u18uv", // english
 ];
 
-const labels = [
-  [ "Now Listening to Sinhala Station", "https://fm.reaprx.tk/" ],
-  [ "Now Listening to English Station", "https://fm.reaprx.tk/" ],
-  
-];
+const stimages = [
+	"assets/css/images/i1.jpg",
+	"assets/css/images/i2.jpg",
+]
 
 let playingIndex = 0; // current radio
 let playing = true; // stream status
@@ -18,14 +17,14 @@ setTimeout(function(){
 }, 1);
 
 function loadStream(index){
-  if(playing && music !== null)
-    destroyStream();
-
+  if(playing && music !== null){
+	destroyStream();
+  }
   music = new Audio();
   music.src = sources[index];
   music.load();
   music.play();
-  setLabel(index);
+  setimg(index);
   pauseIcon();
   playingIndex = index;
   playing = true;
@@ -38,12 +37,33 @@ function destroyStream(){
   playing = false;
 }
 
-function changePlayback(){
-  if(playing){ destroyStream();  }else{  loadStream(playingIndex);  }
+function forward(){
+	destroyStream();
+	if(playingIndex<1){
+		playingIndex += 1
+	} else {
+		playingIndex = 0
+	};
+	loadStream(playingIndex);		
 }
 
-function setLabel(index){
-  document.getElementById("label").innerHTML = '<h6> <a target="_blank" href="' + labels[index][1] + '">' + labels[index][0] + '</a></h6>';
+function backward(){
+	destroyStream();
+	if(playingIndex>0){
+		playingIndex -= 1
+	} else {
+		playingIndex = 1
+	};
+	loadStream(playingIndex);		
+}	
+
+
+function setimg(index){
+	document.getElementById("imge").src=stimages[index] ;
+}
+
+function changePlayback(){
+  if(playing){ destroyStream();  }else{  loadStream(playingIndex);  }
 }
 
 document.onkeydown = function(e) {

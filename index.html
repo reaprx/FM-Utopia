@@ -3,10 +3,27 @@
 	<head>
 		<title>Reapr FM</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" href="assets/css/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 		<script type="text/javascript" src="playback.js" ></script>
+		<style>
+			img {
+			  border: 5px solid #ffffff;
+			  border-radius: 15%;
+			  max-width:250px;
+			  opacity: 1;
+			}
+			.footer {
+			  position: fixed;
+			  left: 0;
+			  bottom: 0;
+			  width: 100%;
+			  color: white;
+			  text-align: center;
+			}
+		</style>
 	</head>
 	<body class="loading">
 		<div id="wrapper">
@@ -15,21 +32,25 @@
 			<div id="main">
 				<!-- Header -->
 					<header id="header">
-						<h1>ReaprX Online Radio Station</h1>
-						<p>
-							<a id="paradise" onclick="loadStream(0)" style="cursor:pointer"> Sinhala  </a>&nbsp;&bull;&nbsp;
-							<a id="paradise" onclick="loadStream(1)" style="cursor:pointer">  English   </a>
-						</p>
+						<h1>The ReaprX Network</h1><br>
+						<img id="imge" src="assets/css/images/i1.jpg" >						
 						<nav>
 							<ul>
+								<li><a id="" href="#" class="icon fa-step-backward" onclick="backward()"><span class="label">Music</span></a></li>
 								<li><a id="playbackButton" href="#" class="icon fa-play" onclick="changePlayback()"><span class="label">Music</span></a></li>
-							</ul>
+								<li><a id="" href="#" class="icon fa-step-forward" onclick="forward()"><span class="label">Music</span></a></li>							</ul>
 						</nav>
-						<div id="label">
-						</div>
 					</header>
 			</div>
 		</div>
+		<div class="footer">
+			<p align="center"><a href="https://fm.reaprx.tk">© 2021 ReaprX.</a>&nbsp; All Rights Reserved</p>
+            <ul class="social-icon">
+            <li><a href="https://reaprx.tk " target="_blank"><i class="fa fa-globe"></i></a></li>
+			<li><a href="https://github.com/reaprx" target="_blank"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://twitter.com/itz_hasalanka" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			</ul>
+         </div>
 		<script>
 			window.onload = function() { document.body.className = ''; }
 			window.ontouchmove = function() { return false; }
