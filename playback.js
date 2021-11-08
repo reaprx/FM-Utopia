@@ -4,8 +4,8 @@ const sources = [
 ];
 
 const stimages = [
-	"assets/css/images/i1.jpg",
-	"assets/css/images/i2.jpg",
+	"assets/css/images/img1.jpg",
+	"assets/css/images/img2.jpg",
 ]
 
 let playingIndex = 0; // current radio
