@@ -1,6 +1,6 @@
 # [FM Utopia website](https://fm.reaprx.tk)
 
-<img src="https://github.com/reaprx/FM-Utopia-web/tree/main/assets/css/images/Capture.PNG" >
+<img src="https://raw.githubusercontent.com/reaprx/FM-Utopia-web/main/assets/css/images/Capture.PNG" >
 
 ****
 <p align="center">
