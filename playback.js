@@ -2,7 +2,6 @@ const sources = [
   "http://stream.zeno.fm/ffzk298hx38uv", // sinhala
   "http://stream.zeno.fm/fgrwvmd8u18uv", // english
   "http://stream.zeno.fm/zkq78rdky38uv", // LO-FI
-  "http://stream.zeno.fm/n8btvhybyf9uv", // Trance
 ];
 
 
@@ -10,7 +9,6 @@ const stimages = [
 	"assets/css/images/img1.jpg",
 	"assets/css/images/img2.jpg",
 	"assets/css/images/img3.jpg",
-    "assets/css/images/img4.jpg",
 ]
 
 let playingIndex = 0; // current radio
@@ -44,7 +42,7 @@ function destroyStream(){
 
 function forward(){
 	destroyStream();
-	if(playingIndex<3){
+	if(playingIndex<2){
 		playingIndex += 1
 	} else {
 		playingIndex = 0
@@ -57,7 +55,7 @@ function backward(){
 	if(playingIndex>0){
 		playingIndex -= 1
 	} else {
-		playingIndex = 3
+		playingIndex = 2
 	};
 	loadStream(playingIndex);		
 }	
