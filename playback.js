@@ -4,12 +4,11 @@ const sources = [
   "http://stream.zeno.fm/zkq78rdky38uv", // LO-FI
 ];
 
-
 const stimages = [
 	"assets/css/images/img1.jpg",
 	"assets/css/images/img2.jpg",
 	"assets/css/images/img3.jpg",
-]
+];
 
 let playingIndex = 0; // current radio
 let playing = true; // stream status
