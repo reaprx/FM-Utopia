@@ -47,6 +47,13 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
+	
+	img {
+		border: 5px solid #ffffff;
+		border-radius: 15%;
+		max-width:250px;
+		opacity: 1;
+	}
 
 /* Box Model */
 
@@ -583,7 +590,7 @@
 		cursor: default;
 		height: 6em;
 		left: 0;
-		line-height: 8em;
+		line-height: 10em;
 		position: absolute;
 		text-align: center;
 		width: 100%;
