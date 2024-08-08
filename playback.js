@@ -1,7 +1,8 @@
 const sources = [
   "http://stream.zeno.fm/ffzk298hx38uv", // sinhala
   "http://stream.zeno.fm/fgrwvmd8u18uv", // english
-  "http://stream.zeno.fm/zkq78rdky38uv", // LO-FI
+  "https://stream.zeno.fm/qbp42rdky38uv", // LO-FI
+
 ];
 
 const stimages = [
