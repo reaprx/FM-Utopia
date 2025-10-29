@@ -69,6 +69,12 @@ function changePlayback(){
   if(playing){ destroyStream();  }else{  loadStream(playingIndex);  }
 }
 
+function setVolume(val) {
+  if (music) { 
+    music.volume = parseFloat(val);
+  }
+}
+
 document.onkeydown = function(e) {
   e = e || window.event;
   switch(e.which || e.keyCode) {

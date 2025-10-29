@@ -20,15 +20,20 @@
 			<div id="bg"></div>
 			<div id="overlay"></div>
 			<div id="main">
-				<!-- Header -->
-					<header id="header">
+				<header id="header">
 						<h1>FM Utopia</h1><br>
-						<img id="imge" src="assets/css/images/i1.jpg" >						
+						<img id="imge" src="assets/css/images/i1.jpg" >								
 						<nav>
+							<div class="volume-control">
+									<i class="icon fa-volume-down"></i>
+									<input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider" id="volumeSlider">
+									<i class="icon fa-volume-up"></i>
+							</div>
 							<ul>
 								<li><a id="" href="#" class="icon fa-step-backward" onclick="backward()"><span class="label">Music</span></a></li>
 								<li><a id="playbackButton" href="#" class="icon fa-play" onclick="changePlayback()"><span class="label">Music</span></a></li>
-								<li><a id="" href="#" class="icon fa-step-forward" onclick="forward()"><span class="label">Music</span></a></li>							</ul>
+								<li><a id="" href="#" class="icon fa-step-forward" onclick="forward()"><span class="label">Music</span></a></li>						
+							</ul>
 						</nav>
 					</header>
 			</div>
@@ -37,7 +42,13 @@
 			</div>
 		</div>
 		<script>
-			window.onload = function() { document.body.className = ''; }
+			window.onload = function() { 
+				document.body.className = ''; 
+				const volumeSlider = document.getElementById('volumeSlider');
+				volumeSlider.addEventListener('input', (e) => {
+					setVolume(e.target.value);
+				});
+			}
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
